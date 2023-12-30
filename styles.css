@@ -1,0 +1,148 @@
+body {
+  font-family: 'Verdana', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+  background: linear-gradient(to right, #000304, #2c3e50);
+  color: #ecf0f1;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+nav {
+ 
+  background: linear-gradient(to right, #000304, #2c3e50);
+ 
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: right;
+  padding: 10px;
+}
+
+.nav-button {
+  display: inline-block;
+  color: #ecf0f1;
+  text-decoration: none;
+  /* font-family:'Times New Roman', Times, serif; */
+  padding: 10px 10px;
+  margin: 0 10px;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button:hover {
+ 
+  text-decoration:#0077B5 underline;
+
+  color: #fff;
+}
+
+section {
+  padding: 10px;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  animation: slideUp 1s ease-in-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile img {
+  width: 200px;
+  height: 240px;
+  max-width: 100%;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 5px solid #3498db;
+}
+
+.bio {
+  max-width: calc(100% - 240px);
+}
+
+.bio p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.bio a {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-toggle:hover {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+footer {
+  border-top: 1px solid#02324d;
+  
+  background: linear-gradient(to right, #000304, #2c3e50);
+
+  color: #ecf0f1;
+  text-align: center;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  nav a {
+    display: none;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav.open {
+    display: block;
+  }
+}
+
+.fab.fa-linkedin {
+color: #0077B5;
+}
+

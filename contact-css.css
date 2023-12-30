@@ -1,0 +1,433 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #000304, #2c3e50);
+
+    color: #ecf0f1;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  nav {
+    background: linear-gradient(to right, #000304, #2c3e50);
+  }
+  
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+   
+  }
+  
+  .nav-button {
+    display: inline-block;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    text-decoration:#0077B5 underline;
+    color: #fff;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  .content-container {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    animation: slideUp 1s ease-in-out forwards;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .profile img {
+    width: 200px;
+    height: 240px;
+    max-width: 100%;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 5px solid #3498db;
+  }
+  
+  .bio {
+    max-width: calc(100% - 240px);
+  }
+  
+  .bio p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .bio a {
+    color: #e74c3c;
+    text-decoration: underline;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .menu-toggle:hover {
+    background-color: #2980b9;
+    color: #fff;
+  }
+  
+  footer {
+    background: linear-gradient(to right, #000304, #2c3e50);
+    border-top: 1px solid#02324d;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    nav a {
+      display: none;
+      width: 100%;
+      text-align: left;
+      box-sizing: border-box;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    nav.open {
+      display: block;
+    }
+}
+section#contact {
+    padding: 20px;
+  }
+  
+  section#contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .contact-details p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+
+
+
+
+  .fab.fa-linkedin {
+    color: #0077B5;
+  }
+  
+
+
+
+
+
+
+  header {
+    color: #fff;
+    padding: 20px;
+    transition: opacity 0.5s, font-size 0.5s;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 200px; 
+    height: auto; 
+    margin-right: 10px; 
+  } 
+  .navbar {
+    margin-right: 0; 
+    margin-left: auto; 
+  }
+  
+
+
+  #welcome {
+    text-align: center;
+    padding: 10px;
+  }
+
+  #welcome h2 {
+    font-size: 28px; 
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+  }
+
+
+  .profile {
+    width: 45%; 
+  }
+
+
+  .profile img {
+    width: 100%; 
+    height: auto; 
+    max-width: 250px; 
+    max-height: 300px; 
+    border-radius: 50%; 
+    margin-top: 50px;
+  }
+  
+
+  .bio {
+  width: 80%;
+  margin-top: 0px;
+  text-align: justify;
+
+  }
+
+  .bio p {
+    font-size: 18px;
+  }
+  .bio p:first-of-type {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar {
+      display: none; 
+    }
+    
+    .content-container {
+      flex-direction: column; 
+    }
+
+    .profile{
+      width: 100%; 
+    }
+
+    #welcome h2 {
+      font-size: 24px; 
+    }
+  }
+  header {
+      
+    color: #fff; 
+    padding: 20px;
+    transition: opacity 0.5s, font-size 0.5s; 
+  }
+
+#myLinks {
+  display: none;
+}
+
+
+.icon {
+  display: none;
+  font-size: 1.5em; 
+}
+
+
+@media screen and (max-width: 600px) {
+  .icon {
+
+    display: flex;
+  align-items: center; 
+  justify-content: space-between;
+    background-color: #2c3e50;
+   
+  }
+
+  .icon span{
+    margin: 0 auto;
+  text-align: center;
+    
+  }
+
+ 
+  .nav-buttons {
+    display: none;
+  }
+
+
+  #myLinks.show {
+    display: block;
+  }
+
+ 
+  .menu-link {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff; 
+    text-decoration: none;
+    font-family: 'Arial', sans-serif; 
+    background-color: #007bff; 
+    margin: 0; 
+  }
+
+  
+  .menu-link.news {
+    font-weight: bold;
+  }
+
+  .menu-link.contact {
+    font-style: italic;
+  }
+
+  .menu-link.about {
+    text-transform: uppercase;
+  }
+
+
+
+  .navbar {
+    flex-direction: row; 
+  }
+
+  .navbar span {
+    order: 2; 
+  }
+
+  .icon {
+    order: 1; 
+  }
+
+  .nav-buttons {
+    order: 3; 
+  }
+}
+
+
+.navbar {
+  margin-right: 0; 
+  margin-left: auto; 
+}
+
+.navbar {
+  margin-right: 0;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.navbar span {
+  font-size: 1.5em; 
+  font-weight:bolder; 
+  margin-right: 450px;
+  margin-left:10px;
+  margin-top:6px;
+}
+
+
+
+
+
+
+.profile img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #fff;
+}
+
+header {
+  
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 600px) {
+.bio{
+
+  text-align: justify;
+  width:1000px;
+  min-height: 100vh;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+  justify-content: center;
+  display:contents;
+  flex-direction: column;
+  align-items: center;
+}
+  .bio p {
+    font-size: 18px;
+    line-height: 1.7;
+    justify-content:center;
+    margin-right:50px;
+    margin-left:30px;
+    padding-right: 10px;
+  
+    
+    
+  }
+
+  .bio p:first-of-type {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .bio p a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .bio p a:hover {
+    text-decoration: underline;
+  }
+}
+
+

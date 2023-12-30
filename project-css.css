@@ -1,0 +1,625 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #000304, #2c3e50);
+
+    color: #ecf0f1;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  /* Add this to your existing CSS code */
+.project-box {
+    border: 4px solid #27ae60; /* Change border color for the project boxes */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .project-box h2 {
+    color: #27ae60; /* Change heading color for projects */
+  }
+  
+  .project-box p {
+    font-size: 16px; /* Adjust the font size for project descriptions */
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .project-box a {
+    color: #27ae60; /* Link color for project links */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .project-box a:hover {
+    text-decoration: underline; /* Underline link on hover */
+  }
+  
+  /* Media Query for smaller screens */
+  @media only screen and (max-width: 768px) {
+    .project-box {
+      margin: 20px;
+    }
+  
+    /* Existing styles for smaller screens */
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  nav {
+    background: linear-gradient(to right, #000304, #2c3e50);
+
+    /* border-bottom: 1px solid #2c3e50; */
+  }
+  
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .nav-button {
+    display: inline-block;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    /* background-color: #34495e; */
+    /* border: 2px solid #2980b9; */
+    /* border-radius: 5px; */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    /* background-color: #2980b9; */
+    text-decoration:#0077B5 underline;
+    color: #fff;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  .content-container {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    animation: slideUp 1s ease-in-out forwards;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .profile img {
+    width: 200px;
+    height: 240px;
+    max-width: 100%;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 5px solid #3498db;
+  }
+  
+  .bio {
+    max-width: calc(100% - 240px);
+  }
+  
+  .bio p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .bio a {
+    color: #e74c3c;
+    text-decoration: underline;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    background: linear-gradient(to right, #000304, #2c3e50);
+
+    color: #ecf0f1;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .menu-toggle:hover {
+    background-color: #2980b9;
+    color: #fff;
+  }
+  
+  footer {
+    border-top: 1px solid#02324d;
+    background: linear-gradient(to right, #000304, #2c3e50);
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    nav a {
+      display: none;
+      width: 100%;
+      text-align: left;
+      box-sizing: border-box;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    nav.open {
+      display: block;
+    }
+}
+section.project {
+    padding: 20px;
+  }
+  
+  section.project h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #3498db;
+  }
+  
+  .project-details p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .project-details ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+  }
+  
+  .project-details li {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .project-details a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .project-details a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Query for smaller screens */
+  @media only screen and (max-width: 768px) {
+    .nav-buttons {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .menu-toggle.show + .nav-buttons {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: linear-gradient(to right, #000304, #2c3e50);
+
+      padding: 10px;
+      z-index: 1;
+    }
+  
+    .nav-button {
+      display: block;
+      padding: 10px;
+      color: #ecf0f1;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+  
+    .nav-button:hover {
+      background-color: #2980b9;
+    }
+
+  }
+  
+ 
+section.project {
+    padding: 20px;
+    border: 1px solid #3498db; 
+    margin-bottom: 20px; 
+    border-radius: 10px; 
+  }
+  
+  section.project h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #000304, #2c3e50);
+
+  }
+  
+  .project-details p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .project-details ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+  }
+  
+  .project-details li {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .project-details a {
+    color: #075d96;
+    text-decoration: none;
+  }
+  
+  .project-details a:hover {
+    text-decoration: underline;
+  }
+
+section.project {
+    padding: 20px;
+    border: 4px solid #55a0d9; 
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 20px; 
+     margin-left: 20px; 
+  margin-right: 20px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+   
+    .menu-toggle.show + .nav-buttons {
+     
+      top: 80px;
+    }
+  }
+
+.project-box {
+    border: 4px solid #27ae60; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .project-box h2 {
+    color: #27ae60; 
+  }
+  
+  .project-box p {
+    font-size: 16px; 
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .project-box a {
+    color: #27ae60; 
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .project-box a:hover {
+    text-decoration: underline; 
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    .project-box {
+      margin: 20px;
+    }
+  
+    
+  }
+  
+  
+  
+      .fab.fa-linkedin {
+      color: #0077B5;
+    }
+    
+
+     
+
+
+
+    header {
+      color: #fff;
+      padding: 20px;
+      transition: opacity 0.5s, font-size 0.5s;
+    }
+  
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo img {
+      width: 200px; /* Adjust the width as needed */
+      height: auto; /* Maintain aspect ratio */
+      margin-right: 10px; /* Adjust spacing to your preference */
+    } 
+    .navbar {
+      margin-right: 0; /* Remove any existing margin */
+      margin-left: auto; /* Move the navbar to the right */
+    }
+    
+    /* Your existing styles remain unchanged */
+  
+    #welcome {
+      text-align: center;
+      padding: 10px;
+    }
+  
+    #welcome h2 {
+      font-size: 28px; /* Increase font size */
+    }
+  
+    .content-container {
+      display: flex;
+      justify-content: space-between; /* Align items side by side */
+      max-width: 1200px; /* Limit maximum width */
+      margin: 0 auto; /* Center content container */
+    }
+  
+  
+    .profile {
+      width: 45%; /* Move the profile image to the top for mobile */
+    }
+  
+  
+    .profile img {
+      width: 100%; /* Make the image fill the container */
+      height: auto; /* Maintain aspect ratio */
+      max-width: 250px; /* Maximum width for larger screens */
+      max-height: 300px; /* Maximum height for larger screens */
+      border-radius: 50%; /* Make the image circular */
+      margin-top: 50px;
+    }
+    
+  
+    .bio {
+    width: 80%;
+    margin-top: 0px;
+    text-align: justify;
+     /* Move the bio content below the image for mobile */
+    }
+  
+    .bio p {
+      font-size: 18px;
+    }
+    .bio p:first-of-type {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+  
+    @media screen and (max-width: 600px) {
+      .navbar {
+        display: none; /* Hide the navigation bar on small screens */
+      }
+      
+      .content-container {
+        flex-direction: column; /* Stack items on small screens */
+      }
+  
+      .profile{
+        width: 100%; /* Full width on small screens */
+      }
+  
+      #welcome h2 {
+        font-size: 24px; /* Adjust font size for better mobile display */
+      }
+    }
+    header {
+        
+      color: #fff; /* Initial text color */
+      padding: 20px;
+      transition: opacity 0.5s, font-size 0.5s; /* Add transition to opacity and font-size with 0.5s duration */
+    }
+  /* Initially hide the navigation links */
+  #myLinks {
+    display: none;
+  }
+  
+  /* Hide the hamburger menu button by default */
+  .icon {
+    display: none;
+    font-size: 1.5em; /* Adjust the size as needed */
+  }
+  
+  
+  /* Media query to show the hamburger menu button on smaller screens */
+  @media screen and (max-width: 600px) {
+    .icon {
+  
+      display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between;
+      background-color: #2c3e50;
+     
+    }
+  
+    .icon span{
+      margin: 0 auto; /* Center the text horizontally */
+    text-align: center;
+      
+    }
+  
+    /* Hide the regular navigation bar buttons on smaller screens */
+    .nav-buttons {
+      display: none;
+    }
+  
+    /* Show the navigation links when the hamburger menu is clicked */
+    #myLinks.show {
+      display: block;
+    }
+  
+    /* Style for mobile menu links */
+    .menu-link {
+      display: block;
+      padding: 10px;
+      font-size: 16px;
+      color: #fff; /* Adjust color as needed */
+      text-decoration: none;
+      font-family: 'Arial', sans-serif; /* Adjust font-family as needed */
+      background-color: #007bff; /* Background color of navigation buttons */
+      margin: 0; /* Adjust margin to remove gap */
+    }
+  
+    /* Decorative styles for specific links */
+    .menu-link.news {
+      font-weight: bold;
+    }
+  
+    .menu-link.contact {
+      font-style: italic;
+    }
+  
+    .menu-link.about {
+      text-transform: uppercase;
+    }
+  
+  
+  
+    .navbar {
+      flex-direction: row; /* Arrange items horizontally */
+    }
+  
+    .navbar span {
+      order: 2; /* Change the order to appear in the middle */
+    }
+  
+    .icon {
+      order: 1; /* Change the order to appear on the left */
+    }
+  
+    .nav-buttons {
+      order: 3; /* Change the order to appear on the right */
+    }
+  }
+  
+  
+  .navbar {
+    margin-right: 200; /* Remove any existing margin */
+    margin-left: auto; /* Move the navbar to the right */
+    align-items: end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    text-align: end;
+  align-content: end;
+  }
+  
+  .navbar span {
+    font-size: 1.5em; /* Adjust the font size as needed */
+    font-weight:bolder; /* Optionally, make the text bold */
+    margin-right: 450px;
+    margin-left:10px;
+    margin-top:6px;
+  }
+  .nav-buttons span.logo {
+    margin-right: 400px; /* Push the logo to the leftmost side */
+    }
+  
+    
+  
+  
+  
+  
+  /* Add a box shadow to the profile image */
+  .profile img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #fff;
+  }
+  
+  header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  
+  @media screen and (max-width: 600px) {
+  .bio{
+  
+    text-align: justify;
+    width:1000px;
+    min-height: 100vh;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    justify-content: center;
+    display:contents;
+    flex-direction: column;
+    align-items: center;
+  }
+    .bio p {
+      font-size: 18px;
+      line-height: 1.7;
+      justify-content:center;
+      margin-right:50px;
+      margin-left:30px;
+      padding-right: 10px;
+    
+      
+      
+    }
+  
+    .bio p:first-of-type {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+  
+    .bio p a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  
+    .bio p a:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  /* Add the following styles to center the text in the navigation bar */
+  
